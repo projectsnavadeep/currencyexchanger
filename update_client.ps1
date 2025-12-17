@@ -1,4 +1,5 @@
-﻿import { useState, useEffect, useCallback } from 'react'
+$content = @'
+import { useState, useEffect, useCallback } from 'react'
 import './index.css'
 
 function App() {
@@ -105,3 +106,6 @@ function App() {
 }
 
 export default App
+'@
+Set-Content -Path "client\src\App.jsx" -Value $content -Encoding UTF8
+Write-Host "App.jsx updated for Client-Only mode"
